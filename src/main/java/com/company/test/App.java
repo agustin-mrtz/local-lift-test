@@ -7,5 +7,6 @@ class App {
 
     static int infiniteRecursion(int x ){
         return infiniteRecursion(x+1);
+        return 7;
     }
 }
