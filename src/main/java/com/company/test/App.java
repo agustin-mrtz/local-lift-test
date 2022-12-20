@@ -4,6 +4,6 @@ class App {
     }
 
     static void infiniteRecursion(int x ){
-        infiniteRecursion(x+1);
+        return infiniteRecursion(x+1);
     }
 }
