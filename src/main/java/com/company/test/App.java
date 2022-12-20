@@ -1,5 +1,7 @@
 class App {
     static final long NANOS_PER_DAY = 24  * 60 * 60 * 1000 * 1000 * 1000;
+    static String username = "AGUSTIN";
+    static String USERNAME = "AGUSTIN";
 
     public static void main(String[] args) {
         infiniteRecursion(99);
