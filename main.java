@@ -6,9 +6,7 @@ class main {
   }
   
   public static infiniteRecursion(int x){
-    if (x > 100) {
       x -= 1; 
       infiniteRecursion(x)
-    }
   }
 }
