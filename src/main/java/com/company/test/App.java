@@ -3,10 +3,10 @@ class App {
 
     public static void main(String[] args) {
         infiniteRecursion(99);
+        System.out.println(NANOS_PER_DAY);
     }
 
     static int infiniteRecursion(int x ){
         return infiniteRecursion(x+1);
-        return 7;
     }
 }
