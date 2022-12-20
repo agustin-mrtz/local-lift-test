@@ -3,7 +3,7 @@ class App {
         infiniteRecursion(99);
     }
 
-    static void infiniteRecursion(int x ){
+    static int infiniteRecursion(int x ){
         return infiniteRecursion(x+1);
     }
 }
