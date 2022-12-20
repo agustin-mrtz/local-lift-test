@@ -15,4 +15,15 @@ class App {
     static boolean compare(String firstList[], String secondList[]) {
         return firstList.equals(secondList);
     }
+
+    static class Data1
+    {
+        private int a;
+
+        @Override
+        public boolean equals(Object other) {
+            Data1 that = (Data1) other; // BAD: This may throw ClassCastException.
+            return a == that.a;
+        }
+    }
 }
