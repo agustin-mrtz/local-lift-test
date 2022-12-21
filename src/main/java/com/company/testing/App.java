@@ -29,14 +29,14 @@ class App {
     }
 
 
-    static class Data2
-    {
-        private int b;
-
-        @Override
-        public boolean equals(Object other) {
-            Data2 that = (Data2) other; // BAD: This may throw ClassCastException.
-            return b == that.b;
-        }
-    }
+//    static class Data2
+//    {
+//        private int b;
+//
+//        @Override
+//        public boolean equals(Object other) {
+//            Data2 that = (Data2) other; // BAD: This may throw ClassCastException.
+//            return b == that.b;
+//        }
+//    }
 }
