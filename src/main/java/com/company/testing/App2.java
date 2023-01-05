@@ -1,6 +1,8 @@
+
+import java.util.Arrays;
 class App2 {
-    static final long NANOS_PER_DAY = 24  * 60 * 60 * 1000 * 1000 * 1000;
-    static final long NANOS_PER_DAY2 = 24  * 60 * 60 * 1000 * 1000 * 2000;
+    static final long NANOS_PER_DAY = 24L  * 60 * 60 * 1000 * 1000 * 1000L;
+    static final long NANOS_PER_DAY2 = 24L  * 60 * 60 * 1000 * 1000 * 2000L;
     static String username = "AGUSTIN";
     static String USERNAME = "AGUSTIN";
 
@@ -22,7 +24,7 @@ class App2 {
     }
     
     static boolean compare(String firstList[], String secondList[]) {
-        return firstList.equals(secondList);
+        return Arrays.equals(firstList, secondList);
     }
 
     static class Data1
@@ -31,7 +33,7 @@ class App2 {
 
         @Override
         public boolean equals(Object other) {
-            Data1 that = (Data1) other; // BAD: This may throw ClassCastException.
+            if (!(other instanceof Data1)) { return false; }Data1 that = (Data1) other; // BAD: This may throw ClassCastException.
             return a == that.a;
         }
     }
@@ -43,7 +45,7 @@ class App2 {
 
         @Override
         public boolean equals(Object other) {
-            Data2 that = (Data2) other; // BAD: This may throw ClassCastException.
+            if (!(other instanceof Data2)) { return false; }Data2 that = (Data2) other; // BAD: This may throw ClassCastException.
             return b == that.b;
         }
     }
@@ -54,7 +56,7 @@ class App2 {
 
         @Override
         public boolean equals(Object other) {
-            Data3 that = (Data3) other; // BAD: This may throw ClassCastException.
+            if (!(other instanceof Data3)) { return false; }Data3 that = (Data3) other; // BAD: This may throw ClassCastException.
             return b == that.b;
         }
     }
