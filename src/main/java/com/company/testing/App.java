@@ -15,6 +15,10 @@ class App {
         return infiniteRecursion(x+1);
     }
     
+    static int baseCase(int x ){
+        return baseCase(x+1);
+    }
+    
     static boolean compare(String firstList[], String secondList[]) {
         return firstList.equals(secondList);
     }
