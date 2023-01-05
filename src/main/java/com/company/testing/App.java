@@ -46,4 +46,15 @@ class App {
             return b == that.b;
         }
     }
+    
+      static class Data3
+    {
+        private int b;
+
+        @Override
+        public boolean equals(Object other) {
+            Data3 that = (Data3) other; // BAD: This may throw ClassCastException.
+            return b == that.b;
+        }
+    }
 }
