@@ -7,6 +7,7 @@ class App {
     public static void main(String[] args) {
         infiniteRecursion(99);
         infiniteRecursion(100);
+        baseCase(23);
         System.out.println(NANOS_PER_DAY);
         compare(new String[]{"this"}, new String[]{"that"});
     }
