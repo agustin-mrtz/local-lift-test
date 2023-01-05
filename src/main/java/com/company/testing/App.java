@@ -1,5 +1,6 @@
 class App {
     static final long NANOS_PER_DAY = 24  * 60 * 60 * 1000 * 1000 * 1000;
+    static final long NANOS_PER_DAY = 24  * 60 * 60 * 1000 * 1000 * 2000;
     static String username = "AGUSTIN";
     static String USERNAME = "AGUSTIN";
 
