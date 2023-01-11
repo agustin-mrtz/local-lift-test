@@ -1,6 +1,6 @@
 
 import java.util.Arrays;
-class App {
+class App2 {
     static final long NANOS_PER_DAY = 24L  * 60 * 60 * 1000 * 1000 * 1000L;
     static final long NANOS_PER_DAY2 = 24L  * 60 * 60 * 1000 * 1000 * 2000L;
     static String username = "AGUSTIN";
